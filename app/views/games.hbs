@@ -21,6 +21,14 @@
             {{/if}}
             {{/each}}
         </ul>
+        <ul>Consoles
+            {{#each consoleObj}}
+            <li>{{@key}}{{this}}</li>
+            {{/each}}
+        </ul>
+        {{#with country}}
+        <ul>{{name}}</ul>
+        {{/with}}
     </div>
 </body>
 

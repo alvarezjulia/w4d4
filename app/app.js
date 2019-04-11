@@ -14,7 +14,15 @@ app.get('/', (req, res) => {
 
 app.get('/games', (req, res) => {
     res.render('games', {
-        gamesList: ['Counter-Strike', 'BF3', 'Sims', 'Street Fighter'].map(el => el.toUpperCase())
+        gamesList: ['Counter-Strike', 'BF3', 'Sims', 'Street Fighter'].map(el => el.toUpperCase()),
+        consoleObj: {
+            Sony: 'PS4',
+            Nintendo: 'Switch',
+            Microsoft: 'Xbox One'
+        },
+        country: {
+            name: 'Japan'
+        }
     })
 })
 
